@@ -19,5 +19,8 @@ const myFunction = () =>{
 }
 myFunction();
 
+// 2 types of memory : Stack and Heap
+// primitive datatypes uses stack memory 
+// non-primitive datatypes uses heap memory (memory is stored and used as reference, changes done in original value)
 
 
