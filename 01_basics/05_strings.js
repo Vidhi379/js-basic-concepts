@@ -1,6 +1,6 @@
 const name = 'Vidhi';
 const age = 25;
-console.log(`My name is ${name} and i am ${age} years old.`);
+console.log(`My name is ${name} and i am ${age} years old.`); // this is known as string interpolation
 
 const gameName = new String('pubg-2'); // way of defining an object 
 console.log(gameName); // this is an object (key value pair)
