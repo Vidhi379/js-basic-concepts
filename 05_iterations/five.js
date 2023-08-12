@@ -27,6 +27,10 @@ const myCoding = [
         fileName: 'java',
     }
 ]
-myCoding.forEach((item) => {
-    console.log(item.fileName);
+const fileName = myCoding.forEach((item) => {
+    // console.log(item.fileName);
+    return item
 });
+
+//foreach doesn't return any values o/p comes as undefined 
+console.log(fileName);
