@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning on Chai aur Code</h1>
+        <h2 id="title2" class="sub-heading">DOM Learning on Chai aur Code</h2>
+        <p>Lorem Ipsum Dolor Sit Amet</p>
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!-- DOM (document object model)
+document.getElementById('title');
+document.getElementsByClassName('heading'); // o/p comes in form of HTMLCollection 
+const title = document.getElementById('title');
+title.style.backgroundColor = "green" // change css using style and css property
+title.innerHTML //o/p will be DOM Learning on Chai aur Code
+document.querySelector('h2'); // selects the first h2 in the web page 
+document.querySelector('#title'); // selects the element with id title
+document.querySelector('input[type='password']'); // selects input with type pwd 
+document.querySelectorAll('h2'); // selects all h2 elements in the page and the output is of nodelist datatype 
+apply forEach loop on nodelist type, it is similar to array datatype but map function can't be used!!
+// to convert nodelist or htmlcollection type to array we use Array.from(tempClassList); function 
+-->
