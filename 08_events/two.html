@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code!!!</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setinterval does work repeatedly whereas settimeout does work only 1 time after the given settime 
+    const sayHitesh = () =>{
+        console.log('hitesh');
+    }
+   const changeText = function(){
+    document.querySelector('h1').innerHTML = "Best JS Practices!!!"
+   }
+   const changeMe = setTimeout(changeText,5000)
+    // setTimeout(changeText, 5000);
+    // setTimeout(function(){
+    //     console.log('hitesh');
+    // },5000)
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe); // cleartimeout is used to clear the settimeout function given above. 
+        console.log('STOPPED');
+    })
+</script>
+</html>
